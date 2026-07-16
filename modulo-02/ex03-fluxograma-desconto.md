@@ -1,11 +1,12 @@
-graph TD
-    %% Início e fim com forma oval
+# Exercício 3 - Fluxograma
+
+```mermaid
+flowchart TD
+    %% Início com forma oval
     A([Início]) --> B
-    H([Fim])
     
-    %% Entradas e saídas com paralelogramo
+    %% Entradas com paralelogramo
     B[/Leia Valor/] --> C
-    G[/Escreva Total/] --> H
     
     %% Decisão com Losango
     C{Valor > 100?}
@@ -18,3 +19,6 @@ graph TD
     D --> F
     E --> F
     F[Total = Valor - Desconto] --> G
+    
+    %% Saída e Fim
+    G[/Escreva Total/] --> H([Fim])
