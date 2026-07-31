@@ -6,10 +6,9 @@ Resposta: AxCadastro é ideal para um CRUD rápido e padrão, sem muita customiz
 
 B - Cite três coisas que o mBrowse faz e o AxCadastro não faz.
 
-Resposta:
-01 - Legendas coloridas nas linhas do browse (aColors), destacando registros por condição.
-02 - Botões customizados no aRotina (tipo 6), permitindo ações extras além do CRUD padrão (ex: botão "Interações", botão "Histórico").
-03 - Filtro pré-definido (cFiltro) aplicado diretamente na exibição da lista, sem precisar de tela de pesquisa adicional.
+1. **Legendas coloridas:** Aplicadas nas linhas do browse (aColors), destacando registros por condição.
+2. **Botões customizados:** Adicionados no aRotina (tipo 6), permitindo ações extras além do CRUD padrão (ex: botão "Interações", botão "Histórico").
+3. **Filtro pré-definido:** Uso do cFiltro aplicado diretamente na exibição da lista, sem precisar de tela de pesquisa adicional.
 
 ​C - Na configuração de legendas (aColors), por que a regra ".T." deve ficar por último?
 
