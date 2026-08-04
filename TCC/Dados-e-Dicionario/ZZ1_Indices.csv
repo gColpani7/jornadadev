@@ -1,4 +1,5 @@
-﻿Ordem;Expressao;Descricao
-1;ZZ1_FILIAL+ZZ1_CODIGO;Chave primaria
-2;ZZ1_FILIAL+ZZ1_FORNEC+ZZ1_LOJAFO;Pesquisa por fornecedor
-3;ZZ1_FILIAL+DTOS(ZZ1_VALCER);Pesquisa por validade do certificado
+﻿Ordem,Expressao,Descricao
+1,ZZ1_FILIAL+ZZ1_CODIGO,Chave primaria
+2,ZZ1_FILIAL+ZZ1_FORNEC+ZZ1_LOJAFO,Pesquisa por fornecedor
+3,ZZ1_FILIAL+DTOS(ZZ1_VALCER),Pesquisa por validade do certificado
+

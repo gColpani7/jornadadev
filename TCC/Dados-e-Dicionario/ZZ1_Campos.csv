@@ -1,11 +1,11 @@
-﻿Titulo;Campo;Tipo;Tamanho;Decimais;Contexto;Obrigatorio;Browse;Validacao_SX3;Observacao
-Filial;ZZ1_FILIAL;C;2;0;Real;Nao;Nao;;Preenchimento padrao pela filial corrente
-Codigo;ZZ1_CODIGO;C;6;0;Real;Sim;Sim;;Chave do controle de fornecimento
-Cod. Fornecedor;ZZ1_FORNEC;C;6;0;Real;Sim;Sim;"ExistCpo(""SA2"",M->ZZ1_FORNEC+M->ZZ1_LOJAFO,1)";Validar codigo e loja na SA2
-Loja Fornecedor;ZZ1_LOJAFO;C;2;0;Real;Sim;Sim;"ExistCpo(""SA2"",M->ZZ1_FORNEC+M->ZZ1_LOJAFO,1)";A validacao depende do codigo e da loja
-Nome Fornecedor;ZZ1_NOMEFO;C;40;0;Virtual;Nao;Sim;;"POSICIONE(""SA2"",1,xFilial(""SA2"")+M->ZZ1_FORNEC+M->ZZ1_LOJAFO,""A2_NOME"")"
-Dados Certificado;ZZ1_CERTIF;C;256;0;Real;Nao;Nao;;Dados livres do certificado
-Val. Certificado;ZZ1_VALCER;D;8;0;Real;Nao;Sim;;Validade do certificado
-Tolerancia (%);ZZ1_TOLERA;N;5;2;Real;Sim;Sim;M->ZZ1_TOLERA>=0.AND.M->ZZ1_TOLERA<=100;Aceita valores de 0 a 100
-Qtd. Conforme;ZZ1_TOTOK;N;12;2;Real;Nao;Sim;;Quantidade acumulada conforme
-Qtd. Nao Conforme;ZZ1_TOTNOK;N;12;2;Real;Nao;Sim;;Quantidade acumulada nao conforme
+﻿Titulo,Campo,Tipo,Tamanho,Decimais,Contexto,Obrigatorio,Browse,Validacao_SX3,Observacao
+Filial,ZZ1_FILIAL,C,2,0,Real,Nao,Nao,,Preenchimento padrao pela filial corrente
+Codigo,ZZ1_CODIGO,C,6,0,Real,Sim,Sim,,Chave do controle de fornecimento
+Cod. Fornecedor,ZZ1_FORNEC,C,6,0,Real,Sim,Sim,"ExistCpo(""SA2"",xFilial(""SA2"")+M->ZZ1_FORNEC+M->ZZ1_LOJAFO,1)",Validar codigo e loja do fornecedor na SA2
+Loja Fornecedor,ZZ1_LOJAFO,C,2,0,Real,Sim,Sim,"ExistCpo(""SA2"",xFilial(""SA2"")+M->ZZ1_FORNEC+M->ZZ1_LOJAFO,1)",A validacao depende do codigo e da loja
+Nome Fornecedor,ZZ1_NOMEFO,C,40,0,Virtual,Nao,Sim,,"POSICIONE(""SA2"",1,xFilial(""SA2"")+M->ZZ1_FORNEC+M->ZZ1_LOJAFO,""A2_NOME"")"
+Dados Certificado,ZZ1_CERTIF,C,256,0,Real,Nao,Nao,,Dados do certificado de qualidade
+Val. Certificado,ZZ1_VALCER,D,8,0,Real,Nao,Sim,,Data de validade do certificado
+Tolerancia (%),ZZ1_TOLERA,N,5,2,Real,Sim,Sim,M->ZZ1_TOLERA>=0.AND.M->ZZ1_TOLERA<=100,Aceita valores entre 0 e 100
+Qtd. Conforme,ZZ1_TOTOK,N,12,2,Real,Nao,Sim,,Quantidade total conforme
+Qtd. Nao Conforme,ZZ1_TOTNOK,N,12,2,Real,Nao,Sim,,Quantidade total nao conforme
